@@ -14,25 +14,25 @@ export const actChangeQuery = (query) => {
 	}
 }
 
-// export const actGoHome = () => {
-// 	return {
-// 		type : types.GO_HOME
-// 	}
-// }
+export const actGoHome = () => {
+	return {
+		type : types.GO_HOME
+	}
+}
 
-// export const actGoArtist = (name, to) => {
-// 	return {
-// 		type : types.GO_ARTIST,
-// 		name, 
-// 		to
-// 	}
-// }
+export const actGoArtist = (name, to) => {
+	return {
+		type : types.GO_ARTIST,
+		name, 
+		to
+	}
+}
 
-// export const actGoAlbum = (name, to) => {
-// 	return {
-// 		type : types.GO_ALBUM,
-// 		name, 
-// 		to
-// 	}
-// }
+export const actGoAlbum = (name, to) => {
+	return {
+		type : types.GO_ALBUM,
+		name, 
+		to
+	}
+}
 

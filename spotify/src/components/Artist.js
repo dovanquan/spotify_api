@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Artist extends Component {
     render() {
@@ -15,7 +16,7 @@ class Artist extends Component {
 			   <div className="thumbnail">
 			   		{this.showImage(item)}
 					<div className="caption">
-						<h3><a href="artist/4mzMFxVZNS2uCVNdsVFoj5">{item.name}</a></h3>
+                        <Link to={`artist/${item.id}`}>{item.name}</Link>
 						<p>{this.showGenres(item.genres)}</p>
 					</div>
 			   </div>

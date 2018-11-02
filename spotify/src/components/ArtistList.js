@@ -29,9 +29,9 @@ class ArtistList extends Component {
     componentWillReceiveProps(nextProps){
         this.searchArtist(nextProps.query);
     }
-    // componentWillMount(){
-    //     this.searchArtist(this.props.query);
-    // }
+    componentWillMount(){
+        this.searchArtist(this.props.query);
+    }
 
 render() {
         let {artists} = this.state;

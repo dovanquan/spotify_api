@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-// import {connect} from 'react-redux';
+import {connect} from 'react-redux';
 
 import ArtistList from './../components/ArtistList';
 import FormSearch from './../components/FormSearch';
-// import {actGoHome} from './../actions/index';
+import {actGoHome} from './../actions/index';
 
 class HomePage extends Component {
-	// componentDidMount(){
-	// 	this.props.changeBreadcrumb();
-	// }
+	componentDidMount(){
+		this.props.changeBreadcrumb();
+	}
 	
 	render() {
 		return (
@@ -23,12 +23,11 @@ class HomePage extends Component {
 		);
 	}
 }
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//     return {
-//         changeBreadcrumb: () => {
-//             dispatch(actGoHome()) ;
-//         }
-//     }
-// }
-// export default connect(null, mapDispatchToProps)(HomePage);
-export default HomePage;
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        changeBreadcrumb: () => {
+            dispatch(actGoHome()) ;
+        }
+    }
+}
+export default connect(null, mapDispatchToProps)(HomePage);

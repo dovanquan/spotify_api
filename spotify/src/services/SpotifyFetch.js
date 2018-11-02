@@ -12,8 +12,8 @@ export default class SpotifyFetch {
     static getArtists(query){
         let strParams = queryString.stringify({
             type: 'artist',
-            limit: 4,
-            offset: 0
+            // limit: 4,
+            // offset: 0
         });
 
         let url = `${configs.BASE_URL}search?q=${query}&${strParams}`;
